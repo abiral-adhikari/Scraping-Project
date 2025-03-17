@@ -1,0 +1,236 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	
+<link rel='stylesheet' type='text/css' href='../web/includes/jquery/jquery-ui-1.13.2.custom.min.css' media='screen'></link>
+<link rel='stylesheet' type='text/css' href='../web/css/base.css' media='screen'></link>
+<link rel='stylesheet' type='text/css' href='../web/css/print.css' media='print'></link>
+<link rel='stylesheet' type='text/css' href='../web/css/tooltip.css' media='screen'></link>
+<link rel='stylesheet' type='text/css' href='../web/css/drop3.css' media='screen'></link>
+<link rel='stylesheet' type='text/css' href='../web/includes/modalbox1.6.0/modalbox.css' media='screen'></link>
+<link rel='stylesheet' type='text/css' href='../web/includes/jquery/token-input.css' media='screen'></link>
+<link rel='stylesheet' type='text/css' href='../web/css/custom.css' media='screen'></link>
+<script src='../web/includes/prototype/prototype.js' type='text/javascript'></script>
+<script src='../web/includes/script.aculo.us/scriptaculous.js' type='text/javascript'></script>
+<script src='../web/includes/tooltip-v0.2.js' type='text/javascript'></script>
+<script src='../web/includes/tabbedlayout.js' type='text/javascript'></script>
+<script src='../web/includes/modalbox1.6.0/modalbox.js' type='text/javascript'></script>
+<script src='../web/includes/jquery/jquery.js' type='text/javascript'></script>
+<script src='../web/includes/jquery/jquery-ui-1.13.2.custom.min.js' type='text/javascript'></script>
+<script src='../web/includes/jquery/jquery.clear.js' type='text/javascript'></script>
+<script src='../web/includes/jquery/tokeninput.js' type='text/javascript'></script>
+
+	
+	<title>YUMA County  - Login</title>
+</head>
+<body id="PAGE_LOGIN">
+
+<table id="columns">
+<tr><td id="header_cell" colspan="2">
+
+<div id="header">
+	
+	
+	
+    <h1>Login</h1>
+	
+	<div class='timeout'><p id="timeRemaining" style='display: none'></p></div>
+	
+	
+</div>
+
+
+<div id='nav'>
+<ul>
+<li class="first"><a href="../secure/web/newUser.jsp">Register</a></li>
+<li class=""><a href="../web/login.jsp">Login</a></li>
+<li class=""><a href="../web/help.jsp">Search Help</a></li>
+<li class=""><a href="../eagleweb/fraudGuardSignup.jsp">Fraud Notify</a></li>
+<li class=""><a href="../web/about.jsp">About</a></li>
+<li><a href="http://www.yumacountyaz.gov/government">Yuma County Government</a></li>
+</ul>
+</div>
+
+
+</td>
+</tr>
+
+
+<tr>
+<td id="left_column">
+
+<script type="text/javascript">
+	Event.observe(window, 'load', function() {
+		document.getElementById('userId').focus();
+		document.getElementById('userId').select();
+
+		// Warn user if they put spaces or other invalid characters into the user id.
+		$('userId').observe('keyup', function(e) {
+			var input = e.element();
+			var errorMsg = "";
+			if(input) {
+				var userId = input.value;
+				if(userId && userId.search('^[\\w\\.\\-@]+$')==-1) {
+					errorMsg = 'Can only contain A-Z, a-z, 0-9, . - _ or @';
+					input.addClassName('error');
+					e.stop();
+				} else {
+					input.removeClassName('error');
+				}
+			}
+			$('userIdError').innerHTML = errorMsg;
+			if(errorMsg) return false;
+		});
+	});
+</script>
+
+<div id="left">
+	
+	<h1></h1>
+   	<p>Search documents <br />
+recorded since<br />
+<em>January 1, 1894</em></p>
+
+<b>Contact Information</b><br />
+<h2>Address:</h2>
+102 South Main Street <br /><br />
+Yuma, AZ 85364
+<br /><br />
+
+<h2>Phone:</h2>
+(928) 373-6020<br />
+
+<h2>Office Hours:</h2>
+8:00 am to 5:00 pm   Monday - Friday<br />
+<br />
+
+
+<h2>Clerk and Recorder:</h2>
+David Lara<br />
+   	
+</div>
+
+</td>
+<td id="right_column">
+<div id="middle">
+	<noscript>
+  <div class='warning'>
+    <h1>Your Attention Please!</h1>
+    <p>JavaScript is not enabled in your browser.<br/>
+    Some features of this site may not be available.<br/>
+    Please <a href="http://www.google.com/search?q=how%20to%20enable%20javascript" target="new">enable JavaScript</a> if you experience any problems.</p>
+  </div>
+</noscript>
+<div id="cookieWarning" class="warning" style="display: none;">
+  <h1>Your Attention Please!</h1>
+  <p>Cookies are required to use this site.<br/>
+  Please <a href="http://www.google.com/search?q=how%20to%20enable%20cookies" target="new">enable cookies</a> before continuing.</p>
+</div>
+<script type="text/javascript">
+  Event.observe(window, 'load', function() {
+    if(!navigator.cookieEnabled) {
+      $('cookieWarning').show();		
+    }
+  });
+</script>
+	<h1>Login</h1>
+	
+	
+
+    <p class="warning">You must be logged in to access the requested page</p>
+
+
+   	<p><b>Public Users -</b> Click Public Login button to search for recorded documents, without images.
+<br />
+<b>Registered Users -</b> Enter User ID and Password, click Registered Users Login button to search for recorded documents. You may, or may not, be able to view/print images, based on subscription type.</p>
+	<table>
+	<tr>
+	
+		<td id="middle_left">
+		   	<h2>Public Users</h2>
+			<form action="../web/loginPOST.jsp" method="POST">
+			  <input type="submit" 
+			  	name="submit" value="Public Login"/>
+			  <input type="hidden" 
+			  	name="guest" value="true"/>
+		  	</form>
+		</td>
+	
+	<td id="middle_right">
+		<h2></h2>
+		<form action="../web/loginPOST.jsp" method="POST" autocomplete="off">
+	  	Registered User ID
+		<br/>
+		  <input type="text" id="userId" name="userId" value=""/><span id="userIdError"></span>
+		<br/>
+	   	Password
+		<br/>
+		  <input type="password" 
+		  	name="password"/>
+		  <br/>
+	   	
+		<br/>
+		  <input type="submit" 
+		  	name="submit" value="Registered Users Login"/>
+	  	</form>
+    <div id="newuser">
+	
+			<a class="link" href="../secure/web/newUser.jsp">New Registered User</a><br/>
+ 		
+	<a class="link newuser" href="../web/passwordRequest.jsp">Forgot your password?</a>
+	</div>
+	</td>
+	</tr>
+	</table>
+    
+    
+</div>
+
+</td>
+</tr>
+
+
+<tr>
+<td id="footer_cell" colspan="2">
+
+	<table id="footer">
+		<tr>
+			<td>
+			   	David Lara, Clerk and Recorder
+				
+			</td>
+			<td class="center">
+			   	Copyright © 2025, <a href="http://www.tyler-eagle.com">Tyler Technologies, Inc.</a> All Rights Reserved
+				
+			</td>
+			<td class="right">
+			   	YUMA County, AZ
+				
+			</td>
+		</tr>
+	</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

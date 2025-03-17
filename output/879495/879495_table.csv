@@ -1,0 +1,55 @@
+Column1,Column2,Column3,Column4,Column5,FormField1,FormField2
+,The requested document could not be found.
+Document Identifier,"<input id=""MainContent_searchMainContent_ctl00_tbReceptionNo"" name=""ctl00$ctl00$MainContent$searchMainContent$ctl00$tbReceptionNo"" readonly=""readonly"" tabindex=""-1"" type=""text""/>",
+Book-Page,"<input id=""MainContent_searchMainContent_ctl00_tbBookPage"" name=""ctl00$ctl00$MainContent$searchMainContent$ctl00$tbBookPage"" readonly=""readonly"" tabindex=""-1"" type=""text""/>",
+Recording Date-Time,"<input id=""MainContent_searchMainContent_ctl00_tbReceptionDate"" name=""ctl00$ctl00$MainContent$searchMainContent$ctl00$tbReceptionDate"" readonly=""readonly"" tabindex=""-1"" type=""text""/>",
+Document Type,"<input id=""MainContent_searchMainContent_ctl00_tbDocumentType"" name=""ctl00$ctl00$MainContent$searchMainContent$ctl00$tbDocumentType"" readonly=""readonly"" tabindex=""-1"" type=""text""/>",
+Page Count,"<input id=""MainContent_searchMainContent_ctl00_tbPageCount"" name=""ctl00$ctl00$MainContent$searchMainContent$ctl00$tbPageCount"" readonly=""readonly"" tabindex=""-1"" type=""text""/>",
+View Image,Document is not perfected
+""
+Grantor,"<table cellpadding=""2"" cellspacing=""0"" class=""tableText"" id=""MainContent_searchMainContent_ctl00_Table2"">
+<tr align=""left"" valign=""top"">
+</tr>
+</table><tr align=""left"" valign=""top"">
+</tr>"
+
+""
+Grantee,"<table cellpadding=""2"" cellspacing=""0"" class=""tableText"" id=""MainContent_searchMainContent_ctl00_Table3"">
+<tr align=""left"" valign=""top"">
+</tr>
+</table><tr align=""left"" valign=""top"">
+</tr>"
+
+,Hide Name Indexing Details
+Name Indexing,Last / Business NameFirst NameMiddle NameSuffix
+
+""
+Related Documents,Reception#Document TypeRelationship,Reception#,Document Type,Relationship
+Reception#,Document Type,Relationship
+""
+Legal,LotBlockSubdivision,Lot,Block,Subdivision
+Lot,Block,Subdivision
+""
+,SectionTownshipRange,Section,Township,Range
+Section,Township,Range
+""
+,Parcel ID,Parcel ID
+Parcel ID
+""
+,StreetCity,Street,City
+Street,City
+""
+Description,"<textarea cols=""20"" id=""MainContent_searchMainContent_ctl00_tbDescription"" name=""ctl00$ctl00$MainContent$searchMainContent$ctl00$tbDescription"" readonly=""readonly"" rows=""2"" tabindex=""-1"">
+</textarea>",
+""
+Requested By,"<div class=""tableText""></div>"
+""
+Return To,"<div class=""tableText""></div>"
+""
+Return Date,"<div class=""tableText""></div>"
+""
+Recording Fees,Fee NameAmount,Fee Name,Amount
+Fee Name,Amount
+""
+Perfected Date,"<div class=""tableText""></div>"
+""
